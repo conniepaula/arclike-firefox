@@ -1,0 +1,219 @@
+#appcontent
+  > #tabbrowser-tabbox
+  > #tabbrowser-tabpanels
+  > .deck-selected
+  > .browserContainer
+  > .browserStack
+  > browser {
+  border-radius: 10px !important;
+  margin: 10px !important;
+}
+
+browser {
+  /*  Uncomment first line for dark mode   */
+  /*   background: linear-gradient(#3b3f52, #262834); */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 227, 241, 1) 0%,
+    rgba(214, 231, 255, 1) 100%
+  );
+
+  border-radius: var(--sidebar-open-border-radius);
+}
+
+.browserContainer {
+  box-shadow: none !important;
+}
+
+.browserStack {
+  /*  Uncomment first line for dark mode   */
+  /*   background: linear-gradient(#3b3f52, #262834); */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 227, 241, 1) 0%,
+    rgba(214, 231, 255, 1) 100%
+  );
+  padding: var(--sidebar-open-padding);
+}
+
+/* SIDEBAR */
+
+#sidebar-main {
+  /*  Uncomment first line for dark mode   */
+  /*   background: linear-gradient(#3b3f52, #262834); */
+  background-color: linear-gradient(
+    180deg,
+    rgba(255, 227, 241, 1) 0%,
+    rgba(214, 231, 255, 1) 100%
+  ) !important;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 227, 241, 1) 0%,
+    rgba(214, 231, 255, 1) 100%
+  ) !important;
+  padding-top: 5px;
+}
+
+#browser:not(:has(#sidebar-main[sidebar-launcher-expanded])) {
+  --sidebar-open-padding: 0;
+  --sidebar-open-border-radius: 0;
+  --sidebar-open-navigator-height: 0;
+}
+
+#browser:has(#sidebar-main[sidebar-launcher-expanded]) {
+  --sidebar-open-padding: 10px;
+  --sidebar-open-border-radius: 6px;
+}
+
+.urlbar-input-container {
+}
+
+.tabbrowser-tab[selected="true"] .tab-background {
+}
+
+.browser-titlebar {
+  /*  Uncomment first line for dark mode   */
+  /*     background: #3b3f52 !important; */
+  /*   Uncomment for a darker green topbar */
+  /*     background: #DAEDD8 !important; */
+  background: rgba(255, 227, 241, 1) !important;
+}
+
+.sidebar-placesTreechildren {
+  box-shadow: none !important;
+}
+
+.sidebar-placesTree {
+  border-radius: 0;
+  box-shadow: none !important;
+}
+
+stack#sidebar-browser-stack {
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  border-style: none !important;
+}
+
+splitter#sidebar-splitter {
+  max-width: 1px;
+  background: rgba(255, 227, 241, 1) !important;
+}
+
+.sidebar-splitter {
+  /*   background: linear-gradient(180deg,#F7FFF7 29%, #CEE0CE 100%) !important; */
+}
+
+#sidebar {
+  border-radius: 0px !important;
+  box-shadow: none !important;
+}
+
+vbox#sidebar-box {
+  padding: 0px !important;
+}
+
+/* ----- bottom buttons ----- */
+/*For hovering  buttons on the sidebar, such as customise, bookmarks and history*/
+.button-background:hover {
+  background: rgba(188, 199, 230, 1) !important;
+}
+/*For sidebar bottom buttons when open*/
+button[aria-pressed="true"] .button-background {
+  background: rgba(188, 199, 230, 1) !important;
+}
+/*For hovering sidebar bottom buttons when open*/
+button[aria-pressed="true"]:hover .button-background {
+  background: rgba(194, 207, 237, 1) !important;
+}
+
+/* ----- */
+
+/*TOOLBAR  BUTTONS*/
+
+/*---- toggle sidebar button specific ----*/
+/*For the toggle sidebar button  when sidebar is open*/
+#sidebar-button[checked="true"] .toolbarbutton-badge-stack {
+  background: rgba(230, 186, 210, 1) !important;
+}
+
+#sidebar-button[checked="true"]:hover .toolbarbutton-icon {
+  background: rgba(235, 206, 224, 1) !important;
+}
+/*For hovering toggle sidebar button when sidebar is open*/
+#sidebar-button[checked="true"]:hover .toolbarbutton-badge-stack {
+  background: rgba(235, 206, 224, 1) !important;
+}
+/*--------*/
+
+/*To target all the toolbar buttons, altering the two classes below is needed*/
+
+/* ----- toolbar buttons other than sidebar, normal state ----- */
+.toolbarbutton-1:hover .toolbarbutton-badge-stack {
+  background: rgba(230, 186, 210, 1) !important;
+}
+
+toolbarbutton:hover .toolbarbutton-icon {
+  background: rgba(230, 186, 210, 1) !important;
+}
+
+/* ----- */
+
+/* ----- for when 'buttons' are open ----- */
+.toolbarbutton-1[open="true"] .toolbarbutton-badge-stack {
+  background: rgba(230, 186, 210, 1) !important;
+}
+.toolbarbutton-1[open="true"]:hover .toolbarbutton-badge-stack {
+  background: rgba(235, 206, 224, 1) !important;
+}
+.toolbarbutton-1[open="true"]:hover .toolbarbutton-icon {
+  background: rgba(235, 206, 224, 1) !important;
+}
+/* ------ */
+
+/* BOOKMARKS TOOLBAR */
+.browser-toolbar {
+  background: rgba(255, 227, 241, 1) !important;
+}
+
+/* TABS */
+
+.tabbrowser-tab[selected="true"] {
+}
+
+/* ----- active tab ----- */
+
+.tabbrowser-tab[selected="true"] .tab-background {
+  box-shadow: none !important; /* remove for a less 'flat' appearance */
+  background-color: rgba(255, 245, 250, 0.7) !important;
+}
+.tabbrowser-tab[selected="true"]:hover .tab-background {
+  background-color: rgba(
+    255,
+    245,
+    250,
+    0.7
+  ) !important; /* make sure this is the same colour as rule above */
+}
+
+/* ----- inactive tabs ----- */
+.tabbrowser-tab:hover .tab-background {
+  background-color: rgba(181, 158, 169, 0.3) !important;
+}
+/* ----- */
+
+/* if you use one of the named css colors, uncomment this rule */
+/* .tabbrowser-tab[selected=true] .tab-label {
+  background-color: transparent !important;
+}  */
+/* ----- */
+
+/* ----- new tab button ----- */
+#tabs-newtab-button:hover {
+  background: rgba(181, 158, 169, 0.3) !important;
+}
+
+/* DO NOT CHANGE  */
+#tabs-newtab-button:hover .toolbarbutton-icon {
+  background: transparent !important;
+}
+/* ----- */
