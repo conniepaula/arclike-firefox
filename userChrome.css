@@ -201,7 +201,7 @@ toolbarbutton:hover .toolbarbutton-icon {
 }
 /* ----- */
 
-/* if you use one of the named css colors, uncomment this rule */
+/* if you use one of the named css colors, uncomment this rule - DO NOT CHANGE */
 /* .tabbrowser-tab[selected=true] .tab-label {
   background-color: transparent !important;
 }  */
