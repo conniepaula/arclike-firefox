@@ -2,6 +2,8 @@
 
 After switching from Arc to Firefox, I badly missed Arc’s beautiful UI. So, I decided to create a custom `userChrome.css` to make Firefox look and feel more like Arc while preserving Firefox's native functionality. 
 
+<img width="1673" height="1022" alt="Result of using userChrome.css" src="https://github.com/user-attachments/assets/fe47cc9f-5d6e-4278-9255-03ce41a90ab3" />
+
 While there are extensions that attempt to replicate the Arc UI, most are no longer maintained and rely on JavaScript to create their own sidebar. I wanted to take a simpler, CSS-only approach that makes use of Firefox's built-in vertical tabs, giving it an Arc-like appearance without moving the address bar or altering the tab navigation. This means:
 
 - The address bar stays at the top, and when using keyboard shortcuts, it won’t move to the center of the screen.
@@ -12,6 +14,7 @@ While there are extensions that attempt to replicate the Arc UI, most are no lon
 To make Firefox look more like Arc, follow these steps:
 
 ### 1. Enable Vertical Tabs
+
 
 Vertical tabs are key to replicating Arc’s layout. To enable them:
 
